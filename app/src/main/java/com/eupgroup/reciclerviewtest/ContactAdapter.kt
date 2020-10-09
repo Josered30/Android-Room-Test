@@ -9,7 +9,6 @@ import com.eupgroup.reciclerviewtest.models.Contact
 import kotlinx.android.synthetic.main.prototype_contact.view.*
 
 class ContactAdapter(var contacts: List<Contact>) : RecyclerView.Adapter<ContactAdapter.ContactPrototype>() {
-
     lateinit var clickListener: ClickListener<Contact>
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactPrototype {

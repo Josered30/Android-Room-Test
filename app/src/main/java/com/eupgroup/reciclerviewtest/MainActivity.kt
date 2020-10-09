@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun initViews() {
-        contactAdapter = ContactAdapter( this.contacts)
+        contactAdapter = ContactAdapter(this.contacts)
 
         contactAdapter.setOnItemClickListener{
             val intent = Intent(this, DetailsActivity::class.java)
@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        
         rvContact.adapter = contactAdapter
         rvContact.layoutManager = LinearLayoutManager(this)
 
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ContactActivity::class.java)
             startActivity(intent)
         }
+
 
 
 
